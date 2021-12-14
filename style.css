@@ -62,7 +62,7 @@ body {
 }
 
 .button:hover {
-    color: darkslategray;
+    color: rgb(53, 92, 92);
 }
 
 .color-btn,
@@ -104,22 +104,24 @@ body {
     transition: transform 0.3s ease-in;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     -webkit-overflow-scrolling: touch;
-    min-width: 40px;
-    max-width: 280px;
+    min-width: 280px;
+    max-width: 300px;
   }
 
   .wrapper1.show {
     transform: translateX(-100%);
     visibility: hidden;
     max-width: 40px;
+    min-width: 40px;
     transition: transform 0.5s ease-in;
   }
   
-@media screen and (min-width: 666px) (max-width:1214px) {
+@media screen and (min-width: 666px) and (max-width:1214px) {
     .wrapper1 {
         transform: translateX(-100%);
         visibility: hidden;
         max-width: 40px;
+        min-width: 40px;
     }
     .wrapper1.show {
         visibility: visible;
@@ -127,8 +129,7 @@ body {
         transition: transform 0.3s ease-in;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         -webkit-overflow-scrolling: touch;
-        min-width: 40px;
-        max-width: 240px;
+        min-width: 240px;
     }
 
     .title {
