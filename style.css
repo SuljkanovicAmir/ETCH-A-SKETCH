@@ -100,10 +100,6 @@ body {
   }
 
   .wrapper1 {
-    list-style-type: none ;
-    top: 45px;
-    left: 0;
-    width: 39%;
     transform: translateX(0%);
     transition: transform 0.3s ease-in;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -119,7 +115,7 @@ body {
     transition: transform 0.5s ease-in;
   }
   
-@media screen and (max-width:1214px) {
+@media screen and (min-width: 666px) (max-width:1214px) {
     .wrapper1 {
         transform: translateX(-100%);
         visibility: hidden;
@@ -145,4 +141,55 @@ body {
     .burger-menu {
         background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     }
+}
+
+@media screen and (max-width: 666px) {
+    body {
+        flex-direction: column;
+    }
+    .title  {
+        font-size: 22px;
+    }
+    .button {
+        font-size: 17px;
+        width: 54px;
+    }
+    .wrapper1 {
+        transform: translateY(-100%);
+        visibility: hidden;
+        max-width: unset;
+        min-width: unset;
+        max-height: 25px ;
+        gap: unset;
+        padding-right: 13px;
+        padding-bottom: 4px;
+    }
+    .burger-menu {
+        top:unset;
+        right: 0%;
+        }
+    .reset-btn {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 50%;
+        right: 3%;
+    }
+    .color-btn, .pixel-btn, .reset-btn {
+        gap: unset;
+    }
+    .wrapper1.show {
+        visibility: visible;
+        transform: translateY(0%);
+        transition: transform 0.5s ease-in;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        -webkit-overflow-scrolling: touch;
+        max-width: unset;
+        min-width: unset;
+        max-height: 200px ;
+        gap: unset;
+        padding-right: 13px;
+        padding-bottom: 4px;
+    }
+
 }
