@@ -84,3 +84,13 @@ pixelButtons.forEach((pixelButton) =>
   pixelButton.addEventListener("click", pixelOption)
 );
 
+
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector(".wrapper1");
+const nav = document.querySelector("nav");
+
+burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+  });
+
+
